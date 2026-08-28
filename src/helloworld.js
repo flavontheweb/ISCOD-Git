@@ -21,12 +21,12 @@ function createHelloWorldWindow() {
 						display: flex;
 						align-items: center;
 						justify-content: center;
-						background: #111;
+						background: yellow;
 						font-family: sans-serif;
 					}
 
 					.label {
-						color: yellow;
+						color: #111;
 						text-align: center;
 						font-size: 24px;
 						width: 100%;
