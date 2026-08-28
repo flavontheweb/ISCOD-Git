@@ -21,7 +21,7 @@ function createHelloWorldWindow() {
 						display: flex;
 						align-items: center;
 						justify-content: center;
-						background: yellow;
+						background: darkgreen;
 						font-family: sans-serif;
 					}
 
