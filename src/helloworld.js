@@ -26,7 +26,7 @@ function createHelloWorldWindow() {
 					}
 
 					.label {
-						color: yellow;
+						color: blue;
 						text-align: center;
 						font-size: 24px;
 						width: 100%;
