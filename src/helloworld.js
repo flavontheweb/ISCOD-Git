@@ -1,8 +1,9 @@
 const { app, BrowserWindow } = require("electron");
+const { HELLO_WORLD_TITLE, HELLO_WORLD_TEXT } = require("./constants.js");
 
 function createHelloWorldWindow() {
 	const window = new BrowserWindow({
-		title: "Hello world",
+		title: HELLO_WORLD_TITLE,
 		width: 200,
 		height: 200,
 	});
@@ -12,7 +13,7 @@ function createHelloWorldWindow() {
 		<html lang="fr">
 			<head>
 				<meta charset="UTF-8" />
-				<title>Hello world</title>
+				<title>${HELLO_WORLD_TITLE}</title>
 				<style>
 					body {
 						margin: 0;
@@ -33,7 +34,7 @@ function createHelloWorldWindow() {
 				</style>
 			</head>
 			<body>
-				<div class="label">Hello world</div>
+				<div class="label">${HELLO_WORLD_TEXT}</div>
 			</body>
 		</html>
 	`;

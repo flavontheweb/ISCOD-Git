@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "type": "commonjs",
-  "main": "helloworld.js",
+  "main": "src/helloworld.js",
   "scripts": {
     "dev": "electron . --no-sandbox",
     "test": "echo \"Error: no test specified\" && exit 1"
