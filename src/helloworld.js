@@ -4,7 +4,7 @@ const { HELLO_WORLD_TITLE, HELLO_WORLD_TEXT } = require("./constants.js");
 function createHelloWorldWindow() {
 	const window = new BrowserWindow({
 		title: HELLO_WORLD_TITLE,
-		width: 200,
+		width: 350,
 		height: 200,
 	});
 
