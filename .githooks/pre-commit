@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -e
+
+# Allows non-interactive tests by setting COMMIT_INFO_CHOICE to y, n, or empty.
+if [ "${COMMIT_INFO_CHOICE+x}" = "x" ]; then
+  yn="$COMMIT_INFO_CHOICE"
+else
+  read -p "Créer suivi/commitInfo.txt pour ce commit (y/[n]) ? " yn < /dev/tty || exit 0
+fi
+
+case "$yn" in
+  [Yy]* )
+    mkdir -p suivi
+    printf "commit vérifié le %s\n" "$(date '+%Y-%m-%d %H:%M:%S')" > suivi/commitInfo.txt
+    git add suivi/commitInfo.txt
+    ;;
+  * )
+    ;;
+esac
+
+exit 0
