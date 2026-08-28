@@ -1,0 +1,14 @@
+{
+  "name": "iscod-git",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "helloworld.js",
+  "scripts": {
+    "dev": "electron . --no-sandbox",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^44.0.0"
+  }
+}
